@@ -92,3 +92,47 @@
 2019-01-04 15:35:57.683 DEBUG 1671 --- [XNIO-2 task-16] c.l.c.aop.logging.LoggingAspect          : Enter: com.lavacreators.corneliouzbett.service.AuditEventService.findByDates() with argument[s] = [2018-12-03T21:00:00Z, 2019-01-05T21:00:00Z, Page request [number: 0, size 20, sort: id: ASC]]
 2019-01-04 15:35:57.746 DEBUG 1671 --- [XNIO-2 task-16] c.l.c.aop.logging.LoggingAspect          : Exit: com.lavacreators.corneliouzbett.service.AuditEventService.findByDates() with result = Page 1 of 1 containing org.springframework.boot.actuate.audit.AuditEvent instances
 2019-01-04 15:35:57.753 DEBUG 1671 --- [XNIO-2 task-16] c.l.c.aop.logging.LoggingAspect          : Exit: com.lavacreators.corneliouzbett.web.rest.AuditResource.getByDates() with result = <200 OK,[AuditEvent [timestamp=2019-01-04T12:35:42.321Z, principal=admin, type=AUTHENTICATION_SUCCESS, data={}]],{X-Total-Count=[1], Link=[</management/audits?page=0&size=20>; rel="last",</management/audits?page=0&size=20>; rel="first"]}>
+2019-01-04 16:03:48.861 DEBUG 5031 --- [restartedMain] c.l.c.config.AsyncConfiguration          : Creating Async Task Executor
+2019-01-04 16:03:50.795 DEBUG 5031 --- [restartedMain] c.ehcache.core.Ehcache-usersByLogin      : Initialize successful.
+2019-01-04 16:03:50.849 DEBUG 5031 --- [restartedMain] c.ehcache.core.Ehcache-usersByEmail      : Initialize successful.
+2019-01-04 16:03:50.869 DEBUG 5031 --- [restartedMain] c.e.c.E.l.corneliouzbett.domain.User     : Initialize successful.
+2019-01-04 16:03:50.891 DEBUG 5031 --- [restartedMain] c.e.c.E.l.c.domain.Authority             : Initialize successful.
+2019-01-04 16:03:50.903 DEBUG 5031 --- [restartedMain] c.e.c.E.l.c.domain.User.authorities      : Initialize successful.
+2019-01-04 16:03:51.558 DEBUG 5031 --- [restartedMain] c.l.c.config.MetricsConfiguration        : Registering JVM gauges
+2019-01-04 16:03:51.598 DEBUG 5031 --- [restartedMain] c.l.c.config.MetricsConfiguration        : Monitoring the datasource
+2019-01-04 16:03:51.625 DEBUG 5031 --- [restartedMain] c.l.c.config.MetricsConfiguration        : Initializing Metrics JMX reporting
+2019-01-04 16:03:54.198 DEBUG 5031 --- [restartedMain] c.l.c.config.LiquibaseConfiguration      : Configuring Liquibase
+2019-01-04 16:03:54.647  WARN 5031 --- [vskul-Executor-1] i.g.j.c.liquibase.AsyncSpringLiquibase   : Starting Liquibase asynchronously, your database might not be ready at startup!
+2019-01-04 16:03:57.822 DEBUG 5031 --- [vskul-Executor-1] i.g.j.c.liquibase.AsyncSpringLiquibase   : Liquibase has updated your database in 3154 ms
+2019-01-04 16:04:21.482 DEBUG 5031 --- [restartedMain] c.l.corneliouzbett.config.WebConfigurer  : Registering CORS filter
+2019-01-04 16:04:21.835  INFO 5031 --- [restartedMain] c.l.corneliouzbett.config.WebConfigurer  : Web application configuration, using profiles: dev
+2019-01-04 16:04:21.836 DEBUG 5031 --- [restartedMain] c.l.corneliouzbett.config.WebConfigurer  : Initializing Metrics registries
+2019-01-04 16:04:21.848 DEBUG 5031 --- [restartedMain] c.l.corneliouzbett.config.WebConfigurer  : Registering Metrics Filter
+2019-01-04 16:04:21.849 DEBUG 5031 --- [restartedMain] c.l.corneliouzbett.config.WebConfigurer  : Registering Metrics Servlet
+2019-01-04 16:04:21.885 DEBUG 5031 --- [restartedMain] c.l.corneliouzbett.config.WebConfigurer  : Initialize H2 console
+2019-01-04 16:04:21.890  INFO 5031 --- [restartedMain] c.l.corneliouzbett.config.WebConfigurer  : Web application fully configured
+2019-01-04 16:04:23.678 DEBUG 5031 --- [restartedMain] c.l.c.security.jwt.TokenProvider         : Using a Base64-encoded JWT secret key
+2019-01-04 16:04:30.436 DEBUG 5031 --- [restartedMain] c.l.c.config.DatabaseConfiguration       : Starting H2 database
+2019-01-04 16:04:31.501  WARN 5031 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-01-04 16:04:31.543  WARN 5031 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-01-04 16:04:32.835 DEBUG 5031 --- [restartedMain] i.g.j.c.apidoc.SwaggerAutoConfiguration  : Starting Swagger
+2019-01-04 16:04:32.916 DEBUG 5031 --- [restartedMain] i.g.j.c.apidoc.SwaggerAutoConfiguration  : Started Swagger in 81 ms
+2019-01-04 16:04:37.691  INFO 5031 --- [restartedMain] c.lavacreators.corneliouzbett.VskulApp   : 
+----------------------------------------------------------
+	Application 'vskul' is running! Access URLs:
+	Local: 		http://localhost:8080/
+	External: 	http://127.0.1.1:8080/
+	Profile(s): 	[dev, swagger]
+----------------------------------------------------------
+2019-01-04 16:11:07.892 DEBUG 5031 --- [XNIO-2 task-6] c.l.c.aop.logging.LoggingAspect          : Enter: com.lavacreators.corneliouzbett.repository.CustomAuditEventRepository.add() with argument[s] = [AuditEvent [timestamp=2019-01-04T13:11:07.021Z, principal=anonymousUser, type=AUTHORIZATION_FAILURE, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}]]
+2019-01-04 16:11:08.086 DEBUG 5031 --- [XNIO-2 task-6] c.l.c.aop.logging.LoggingAspect          : Exit: com.lavacreators.corneliouzbett.repository.CustomAuditEventRepository.add() with result = null
+2019-01-04 16:11:08.313  WARN 5031 --- [XNIO-2 task-6] o.z.problem.spring.common.AdviceTrait    : Unauthorized: Full authentication is required to access this resource
+2019-01-04 16:11:25.146 DEBUG 5031 --- [XNIO-2 task-11] c.l.c.aop.logging.LoggingAspect          : Enter: com.lavacreators.corneliouzbett.web.rest.UserJWTController.authorize() with argument[s] = [LoginVM{username='admin', rememberMe=true}]
+2019-01-04 16:11:26.073 DEBUG 5031 --- [XNIO-2 task-11] c.l.c.security.DomainUserDetailsService  : Authenticating admin
+2019-01-04 16:11:30.479 DEBUG 5031 --- [XNIO-2 task-11] c.l.c.aop.logging.LoggingAspect          : Enter: com.lavacreators.corneliouzbett.repository.CustomAuditEventRepository.add() with argument[s] = [AuditEvent [timestamp=2019-01-04T13:11:30.479Z, principal=admin, type=AUTHENTICATION_SUCCESS, data={}]]
+2019-01-04 16:11:30.851 DEBUG 5031 --- [XNIO-2 task-11] c.l.c.aop.logging.LoggingAspect          : Exit: com.lavacreators.corneliouzbett.repository.CustomAuditEventRepository.add() with result = null
+2019-01-04 16:11:31.763 DEBUG 5031 --- [XNIO-2 task-11] c.l.c.aop.logging.LoggingAspect          : Exit: com.lavacreators.corneliouzbett.web.rest.UserJWTController.authorize() with result = <200 OK,com.lavacreators.corneliouzbett.web.rest.UserJWTController$JWTToken@2b8f19fd,{Authorization=[Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU0OTE5OTQ5MH0.jSPhgkD5MTnXrsp5i02-qNza4s8zhDnph3iNzWWT37bHXlNHtqKYwEmjMUdoNP0QSVWJ3tmwWuV7pJvEq6K76Q]}>
+2019-01-04 16:11:31.808 DEBUG 5031 --- [XNIO-2 task-12] c.l.c.aop.logging.LoggingAspect          : Enter: com.lavacreators.corneliouzbett.web.rest.AccountResource.getAccount() with argument[s] = []
+2019-01-04 16:11:32.622 DEBUG 5031 --- [XNIO-2 task-12] c.l.c.aop.logging.LoggingAspect          : Enter: com.lavacreators.corneliouzbett.service.UserService.getUserWithAuthorities() with argument[s] = []
+2019-01-04 16:11:32.815 DEBUG 5031 --- [XNIO-2 task-12] c.l.c.aop.logging.LoggingAspect          : Exit: com.lavacreators.corneliouzbett.service.UserService.getUserWithAuthorities() with result = Optional[User{login='admin', firstName='Administrator', lastName='Administrator', email='admin@localhost', imageUrl='', activated='true', langKey='en', activationKey='null'}]
+2019-01-04 16:11:32.818 DEBUG 5031 --- [XNIO-2 task-12] c.l.c.aop.logging.LoggingAspect          : Exit: com.lavacreators.corneliouzbett.web.rest.AccountResource.getAccount() with result = UserDTO{login='admin', firstName='Administrator', lastName='Administrator', email='admin@localhost', imageUrl='', activated=true, langKey='en', createdBy=system, createdDate=2019-01-04T12:31:03.075Z, lastModifiedBy='system', lastModifiedDate=null, authorities=[ROLE_USER, ROLE_ADMIN]}
