@@ -1,0 +1,94 @@
+2019-01-04 15:30:55.026 DEBUG 1146 --- [restartedMain] c.l.c.config.AsyncConfiguration          : Creating Async Task Executor
+2019-01-04 15:30:56.508 DEBUG 1146 --- [restartedMain] c.ehcache.core.Ehcache-usersByLogin      : Initialize successful.
+2019-01-04 15:30:56.570 DEBUG 1146 --- [restartedMain] c.ehcache.core.Ehcache-usersByEmail      : Initialize successful.
+2019-01-04 15:30:56.583 DEBUG 1146 --- [restartedMain] c.e.c.E.l.corneliouzbett.domain.User     : Initialize successful.
+2019-01-04 15:30:56.593 DEBUG 1146 --- [restartedMain] c.e.c.E.l.c.domain.Authority             : Initialize successful.
+2019-01-04 15:30:56.602 DEBUG 1146 --- [restartedMain] c.e.c.E.l.c.domain.User.authorities      : Initialize successful.
+2019-01-04 15:30:57.106 DEBUG 1146 --- [restartedMain] c.l.c.config.MetricsConfiguration        : Registering JVM gauges
+2019-01-04 15:30:57.146 DEBUG 1146 --- [restartedMain] c.l.c.config.MetricsConfiguration        : Monitoring the datasource
+2019-01-04 15:30:57.161 DEBUG 1146 --- [restartedMain] c.l.c.config.MetricsConfiguration        : Initializing Metrics JMX reporting
+2019-01-04 15:30:59.593 DEBUG 1146 --- [restartedMain] c.l.c.config.LiquibaseConfiguration      : Configuring Liquibase
+2019-01-04 15:31:00.081  WARN 1146 --- [vskul-Executor-1] i.g.j.c.liquibase.AsyncSpringLiquibase   : Starting Liquibase asynchronously, your database might not be ready at startup!
+2019-01-04 15:31:03.119 DEBUG 1146 --- [vskul-Executor-1] i.g.j.c.liquibase.AsyncSpringLiquibase   : Liquibase has updated your database in 3024 ms
+2019-01-04 15:31:17.662 DEBUG 1146 --- [restartedMain] c.l.corneliouzbett.config.WebConfigurer  : Registering CORS filter
+2019-01-04 15:31:17.892  INFO 1146 --- [restartedMain] c.l.corneliouzbett.config.WebConfigurer  : Web application configuration, using profiles: dev
+2019-01-04 15:31:17.893 DEBUG 1146 --- [restartedMain] c.l.corneliouzbett.config.WebConfigurer  : Initializing Metrics registries
+2019-01-04 15:31:17.900 DEBUG 1146 --- [restartedMain] c.l.corneliouzbett.config.WebConfigurer  : Registering Metrics Filter
+2019-01-04 15:31:17.901 DEBUG 1146 --- [restartedMain] c.l.corneliouzbett.config.WebConfigurer  : Registering Metrics Servlet
+2019-01-04 15:31:17.907 DEBUG 1146 --- [restartedMain] c.l.corneliouzbett.config.WebConfigurer  : Initialize H2 console
+2019-01-04 15:31:17.911  INFO 1146 --- [restartedMain] c.l.corneliouzbett.config.WebConfigurer  : Web application fully configured
+2019-01-04 15:31:18.811 DEBUG 1146 --- [restartedMain] c.l.c.security.jwt.TokenProvider         : Using a Base64-encoded JWT secret key
+2019-01-04 15:31:20.466 DEBUG 1146 --- [restartedMain] c.g.v.s.jest.mapper.DefaultErrorMapper   : Cannot execute jest action , response code : 404 , error : 404 Not Found , message : null
+2019-01-04 15:31:25.634 DEBUG 1146 --- [restartedMain] c.l.c.config.DatabaseConfiguration       : Starting H2 database
+2019-01-04 15:31:26.408  WARN 1146 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-01-04 15:31:26.450  WARN 1146 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-01-04 15:31:27.388 DEBUG 1146 --- [restartedMain] i.g.j.c.apidoc.SwaggerAutoConfiguration  : Starting Swagger
+2019-01-04 15:31:27.432 DEBUG 1146 --- [restartedMain] i.g.j.c.apidoc.SwaggerAutoConfiguration  : Started Swagger in 43 ms
+2019-01-04 15:31:30.779  INFO 1146 --- [restartedMain] c.lavacreators.corneliouzbett.VskulApp   : 
+----------------------------------------------------------
+	Application 'vskul' is running! Access URLs:
+	Local: 		http://localhost:8080/
+	External: 	http://127.0.1.1:8080/
+	Profile(s): 	[dev, swagger]
+----------------------------------------------------------
+2019-01-04 15:32:11.771  INFO 1146 --- [XNIO-2 task-5] c.l.c.security.jwt.TokenProvider         : Invalid JWT signature.
+2019-01-04 15:32:11.790  INFO 1146 --- [XNIO-2 task-6] c.l.c.security.jwt.TokenProvider         : Invalid JWT signature.
+2019-01-04 15:32:12.346 DEBUG 1146 --- [XNIO-2 task-6] c.l.c.aop.logging.LoggingAspect          : Enter: com.lavacreators.corneliouzbett.repository.CustomAuditEventRepository.add() with argument[s] = [AuditEvent [timestamp=2019-01-04T12:32:12.134Z, principal=anonymousUser, type=AUTHORIZATION_FAILURE, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}]]
+2019-01-04 15:32:12.356 DEBUG 1146 --- [XNIO-2 task-6] c.l.c.aop.logging.LoggingAspect          : Exit: com.lavacreators.corneliouzbett.repository.CustomAuditEventRepository.add() with result = null
+2019-01-04 15:32:12.447  WARN 1146 --- [XNIO-2 task-6] o.z.problem.spring.common.AdviceTrait    : Unauthorized: Full authentication is required to access this resource
+2019-01-04 15:32:25.190 DEBUG 1146 --- [XNIO-2 task-11] c.l.c.aop.logging.LoggingAspect          : Enter: com.lavacreators.corneliouzbett.repository.CustomAuditEventRepository.add() with argument[s] = [AuditEvent [timestamp=2019-01-04T12:32:25.190Z, principal=anonymousUser, type=AUTHORIZATION_FAILURE, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}]]
+2019-01-04 15:32:25.191 DEBUG 1146 --- [XNIO-2 task-11] c.l.c.aop.logging.LoggingAspect          : Exit: com.lavacreators.corneliouzbett.repository.CustomAuditEventRepository.add() with result = null
+2019-01-04 15:32:25.193  WARN 1146 --- [XNIO-2 task-11] o.z.problem.spring.common.AdviceTrait    : Unauthorized: Full authentication is required to access this resource
+2019-01-04 15:33:16.379 DEBUG 1146 --- [Thread-2] c.e.c.E.l.corneliouzbett.domain.User     : Close successful.
+2019-01-04 15:33:16.380 DEBUG 1146 --- [Thread-2] c.e.c.E.l.c.domain.Authority             : Close successful.
+2019-01-04 15:33:16.381 DEBUG 1146 --- [Thread-2] c.e.c.E.l.c.domain.User.authorities      : Close successful.
+2019-01-04 15:33:16.382 DEBUG 1146 --- [Thread-2] c.ehcache.core.Ehcache-usersByEmail      : Close successful.
+2019-01-04 15:33:16.383 DEBUG 1146 --- [Thread-2] c.ehcache.core.Ehcache-usersByLogin      : Close successful.
+2019-01-04 15:34:10.820 DEBUG 1671 --- [restartedMain] c.l.c.config.AsyncConfiguration          : Creating Async Task Executor
+2019-01-04 15:34:12.136 DEBUG 1671 --- [restartedMain] c.ehcache.core.Ehcache-usersByLogin      : Initialize successful.
+2019-01-04 15:34:12.189 DEBUG 1671 --- [restartedMain] c.ehcache.core.Ehcache-usersByEmail      : Initialize successful.
+2019-01-04 15:34:12.198 DEBUG 1671 --- [restartedMain] c.e.c.E.l.corneliouzbett.domain.User     : Initialize successful.
+2019-01-04 15:34:12.210 DEBUG 1671 --- [restartedMain] c.e.c.E.l.c.domain.Authority             : Initialize successful.
+2019-01-04 15:34:12.219 DEBUG 1671 --- [restartedMain] c.e.c.E.l.c.domain.User.authorities      : Initialize successful.
+2019-01-04 15:34:12.715 DEBUG 1671 --- [restartedMain] c.l.c.config.MetricsConfiguration        : Registering JVM gauges
+2019-01-04 15:34:12.739 DEBUG 1671 --- [restartedMain] c.l.c.config.MetricsConfiguration        : Monitoring the datasource
+2019-01-04 15:34:12.754 DEBUG 1671 --- [restartedMain] c.l.c.config.MetricsConfiguration        : Initializing Metrics JMX reporting
+2019-01-04 15:34:14.969 DEBUG 1671 --- [restartedMain] c.l.c.config.LiquibaseConfiguration      : Configuring Liquibase
+2019-01-04 15:34:15.474  WARN 1671 --- [vskul-Executor-1] i.g.j.c.liquibase.AsyncSpringLiquibase   : Starting Liquibase asynchronously, your database might not be ready at startup!
+2019-01-04 15:34:18.209 DEBUG 1671 --- [vskul-Executor-1] i.g.j.c.liquibase.AsyncSpringLiquibase   : Liquibase has updated your database in 2714 ms
+2019-01-04 15:34:32.121 DEBUG 1671 --- [restartedMain] c.l.corneliouzbett.config.WebConfigurer  : Registering CORS filter
+2019-01-04 15:34:32.339  INFO 1671 --- [restartedMain] c.l.corneliouzbett.config.WebConfigurer  : Web application configuration, using profiles: dev
+2019-01-04 15:34:32.340 DEBUG 1671 --- [restartedMain] c.l.corneliouzbett.config.WebConfigurer  : Initializing Metrics registries
+2019-01-04 15:34:32.347 DEBUG 1671 --- [restartedMain] c.l.corneliouzbett.config.WebConfigurer  : Registering Metrics Filter
+2019-01-04 15:34:32.348 DEBUG 1671 --- [restartedMain] c.l.corneliouzbett.config.WebConfigurer  : Registering Metrics Servlet
+2019-01-04 15:34:32.354 DEBUG 1671 --- [restartedMain] c.l.corneliouzbett.config.WebConfigurer  : Initialize H2 console
+2019-01-04 15:34:32.357  INFO 1671 --- [restartedMain] c.l.corneliouzbett.config.WebConfigurer  : Web application fully configured
+2019-01-04 15:34:33.251 DEBUG 1671 --- [restartedMain] c.l.c.security.jwt.TokenProvider         : Using a Base64-encoded JWT secret key
+2019-01-04 15:34:37.792 DEBUG 1671 --- [restartedMain] c.l.c.config.DatabaseConfiguration       : Starting H2 database
+2019-01-04 15:34:38.552  WARN 1671 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-01-04 15:34:38.570  WARN 1671 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-01-04 15:34:39.763 DEBUG 1671 --- [restartedMain] i.g.j.c.apidoc.SwaggerAutoConfiguration  : Starting Swagger
+2019-01-04 15:34:39.793 DEBUG 1671 --- [restartedMain] i.g.j.c.apidoc.SwaggerAutoConfiguration  : Started Swagger in 30 ms
+2019-01-04 15:34:42.459  INFO 1671 --- [restartedMain] c.lavacreators.corneliouzbett.VskulApp   : 
+----------------------------------------------------------
+	Application 'vskul' is running! Access URLs:
+	Local: 		http://localhost:8080/
+	External: 	http://127.0.1.1:8080/
+	Profile(s): 	[dev, swagger]
+----------------------------------------------------------
+2019-01-04 15:35:16.205 DEBUG 1671 --- [XNIO-2 task-6] c.l.c.aop.logging.LoggingAspect          : Enter: com.lavacreators.corneliouzbett.repository.CustomAuditEventRepository.add() with argument[s] = [AuditEvent [timestamp=2019-01-04T12:35:15.846Z, principal=anonymousUser, type=AUTHORIZATION_FAILURE, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}]]
+2019-01-04 15:35:17.048 DEBUG 1671 --- [XNIO-2 task-6] c.l.c.aop.logging.LoggingAspect          : Exit: com.lavacreators.corneliouzbett.repository.CustomAuditEventRepository.add() with result = null
+2019-01-04 15:35:17.246  WARN 1671 --- [XNIO-2 task-6] o.z.problem.spring.common.AdviceTrait    : Unauthorized: Full authentication is required to access this resource
+2019-01-04 15:35:39.593 DEBUG 1671 --- [XNIO-2 task-12] c.l.c.aop.logging.LoggingAspect          : Enter: com.lavacreators.corneliouzbett.web.rest.UserJWTController.authorize() with argument[s] = [LoginVM{username='admin', rememberMe=null}]
+2019-01-04 15:35:39.994 DEBUG 1671 --- [XNIO-2 task-12] c.l.c.security.DomainUserDetailsService  : Authenticating admin
+2019-01-04 15:35:42.321 DEBUG 1671 --- [XNIO-2 task-12] c.l.c.aop.logging.LoggingAspect          : Enter: com.lavacreators.corneliouzbett.repository.CustomAuditEventRepository.add() with argument[s] = [AuditEvent [timestamp=2019-01-04T12:35:42.321Z, principal=admin, type=AUTHENTICATION_SUCCESS, data={}]]
+2019-01-04 15:35:42.365 DEBUG 1671 --- [XNIO-2 task-12] c.l.c.aop.logging.LoggingAspect          : Exit: com.lavacreators.corneliouzbett.repository.CustomAuditEventRepository.add() with result = null
+2019-01-04 15:35:43.741 DEBUG 1671 --- [XNIO-2 task-12] c.l.c.aop.logging.LoggingAspect          : Exit: com.lavacreators.corneliouzbett.web.rest.UserJWTController.authorize() with result = <200 OK,com.lavacreators.corneliouzbett.web.rest.UserJWTController$JWTToken@1014ac66,{Authorization=[Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU0NjY5MTc0Mn0.6sKxkDhxRut_CEx9WWaoR75cHgDkH9PyLMEd3IbO1xGxzMde_8kGo3NXtnpAbZa-iHo23HeUcT9kKZ4lS8TzZA]}>
+2019-01-04 15:35:43.794 DEBUG 1671 --- [XNIO-2 task-13] c.l.c.aop.logging.LoggingAspect          : Enter: com.lavacreators.corneliouzbett.web.rest.AccountResource.getAccount() with argument[s] = []
+2019-01-04 15:35:43.813 DEBUG 1671 --- [XNIO-2 task-13] c.l.c.aop.logging.LoggingAspect          : Enter: com.lavacreators.corneliouzbett.service.UserService.getUserWithAuthorities() with argument[s] = []
+2019-01-04 15:35:43.831 DEBUG 1671 --- [XNIO-2 task-13] c.l.c.aop.logging.LoggingAspect          : Exit: com.lavacreators.corneliouzbett.service.UserService.getUserWithAuthorities() with result = Optional[User{login='admin', firstName='Administrator', lastName='Administrator', email='admin@localhost', imageUrl='', activated='true', langKey='en', activationKey='null'}]
+2019-01-04 15:35:43.838 DEBUG 1671 --- [XNIO-2 task-13] c.l.c.aop.logging.LoggingAspect          : Exit: com.lavacreators.corneliouzbett.web.rest.AccountResource.getAccount() with result = UserDTO{login='admin', firstName='Administrator', lastName='Administrator', email='admin@localhost', imageUrl='', activated=true, langKey='en', createdBy=system, createdDate=2019-01-04T12:31:03.075Z, lastModifiedBy='system', lastModifiedDate=null, authorities=[ROLE_USER, ROLE_ADMIN]}
+2019-01-04 15:35:57.664 DEBUG 1671 --- [XNIO-2 task-16] c.l.c.aop.logging.LoggingAspect          : Enter: com.lavacreators.corneliouzbett.web.rest.AuditResource.getByDates() with argument[s] = [2018-12-04, 2019-01-05, Page request [number: 0, size 20, sort: id: ASC]]
+2019-01-04 15:35:57.683 DEBUG 1671 --- [XNIO-2 task-16] c.l.c.aop.logging.LoggingAspect          : Enter: com.lavacreators.corneliouzbett.service.AuditEventService.findByDates() with argument[s] = [2018-12-03T21:00:00Z, 2019-01-05T21:00:00Z, Page request [number: 0, size 20, sort: id: ASC]]
+2019-01-04 15:35:57.746 DEBUG 1671 --- [XNIO-2 task-16] c.l.c.aop.logging.LoggingAspect          : Exit: com.lavacreators.corneliouzbett.service.AuditEventService.findByDates() with result = Page 1 of 1 containing org.springframework.boot.actuate.audit.AuditEvent instances
+2019-01-04 15:35:57.753 DEBUG 1671 --- [XNIO-2 task-16] c.l.c.aop.logging.LoggingAspect          : Exit: com.lavacreators.corneliouzbett.web.rest.AuditResource.getByDates() with result = <200 OK,[AuditEvent [timestamp=2019-01-04T12:35:42.321Z, principal=admin, type=AUTHENTICATION_SUCCESS, data={}]],{X-Total-Count=[1], Link=[</management/audits?page=0&size=20>; rel="last",</management/audits?page=0&size=20>; rel="first"]}>
